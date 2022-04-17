@@ -239,10 +239,10 @@ cursor: pointer;
   }
   .soru-container, .soru-paneli {
     min-width: 15rem;
-    min-height: 17rem;
+    min-height: 15rem;
   }
   .secimler{
-    margin-top: 0.5em;
+    margin-top: 0.3em;
   }
 
 }
