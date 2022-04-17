@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9753036172.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+​<body onload="basla()">
+   
+    <div class="container">
+        
+        <div class="titel">Genel Kültür Bilgi Yarışması </div>
+        <p id="sonuc2" >Tebrikler, Tüm Soruları Cevapladınız</p>
+       
+        <div id="start" class="start"onclick="newStart()" >Yeni Oyun</div>
+        <div class="wrapper">
+      
+        <div class="soru-container">
+       
+        <div class="soru-paneli">
+            <p id="soru_alani">soru</p>
+            <p class="secimler" id="a_secimi"data="A"  onclick="cevaplandi(this)">A</p>
+            <p class="secimler"id="b_secimi"data="B"  onclick="cevaplandi(this)">B</p>
+            <p class="secimler"id="c_secimi"data="C" onclick="cevaplandi(this)">C</p>
+            <p class="secimler"id="d_secimi"data="D" onclick="cevaplandi(this)">D</p>
+        </div>
+      
+        </div>
+    </div>
+        <div class="footer">
+      
+       <p id="dogru">Doğru Cevap: 0</p>
+       <p id="yanlis">Yanlış Cevap:0</p>
+       <p id="toplamPuan">Toplam Puan:0</p>
+    </div>
+    <p id="sonuc" onclick="newStart()">Yeni Oyun</p>
+    
+</div>
+
+
+
+</div>
+<script src="app.js"></script>
+
+
+</body>
+</html>

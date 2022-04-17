@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 70vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    margin-top: 3em;
+    
+    background-color: rgba(17, 1, 1, 0.986);
+   
+}
+.container > * {
+  margin-bottom: 0.8em;
+}
+.container {
+  min-width: 50vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  background-color:rgba(119, 151, 179, 0.525);
+  border-radius: 20px;
+    
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border: none;
+  outline: white solid 14px;
+  margin: auto;  
+  padding: 10px;
+ 
+
+ 
+}
+.titel {
+  margin-top: 1em;
+font-weight: 700;
+text-transform: uppercase;
+  border-radius: 10px;
+  text-align: center;
+  color:black;
+  padding: 0.8em;
+  background-color: white;
+  
+  
+}
+.start {
+  
+  background-color:rgba(172, 255, 47, 0.402);
+
+  color: white;
+  width: 11rem;
+  padding: 0.8em;
+  text-align: center;
+  border-radius:19px;
+  cursor: pointer;
+  
+}
+.start:hover{
+  background-color:rgb(214, 246, 183);
+  color: black;
+  transition: all 25ms;
+  border-radius:19px;
+}
+.soru-number {
+  border: 1px solid white;
+  width: 40%;
+  padding: 0.3em;
+
+  color: white;
+  border-radius: 0px 0px 19px 19px;
+  text-align: center;
+ 
+}
+.soru-container {
+  
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 20px;
+  
+  
+}
+#sorular {
+  
+  width: 350px;
+  height: 150px;
+  
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+
+#dogru {
+  border: 1px solid gray;
+  padding: 0.5em;
+  background-color: rgba(5, 23, 40, 0.763);
+  border-radius: 10px;
+  border: none;
+  width: 10rem;
+  color: white;
+  border: 1px solid white;
+  border: 1px solid rgba(5, 23, 40, 0.763);
+  background-color: white;
+
+  color: rgb(14, 14, 14);
+}
+#yanlis {
+  width: 10rem;
+  border: 1px solid white;
+  padding: 0.5em;
+  background-color: rgba(5, 23, 40, 0.763);
+  border-radius: 10px;
+  color: white;
+  border: 1px solid rgba(5, 23, 40, 0.763);
+  background-color: white;
+
+  color: rgb(14, 14, 14);
+  
+}
+#toplamPuan {
+  width: 30%;
+  color: white;
+  border: 1px solid gray;
+  padding: 0.5em;
+  
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 10rem;
+  border: 1px solid rgba(5, 23, 40, 0.763);
+  background-color: white;
+
+  color: rgb(14, 14, 14);
+  
+}
+
+.alt {
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  text-align: center;
+}
+.soru-paneli {
+ 
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 40% 40%;
+  font-size: clamp(0.8125rem, 0.7708rem + 0.2222vw, 0.9375rem);
+  padding: 1em;
+  width: 40vw;
+  gap: 0.5em;
+
+  border-radius: 20px;
+ 
+  background-color: white;
+  
+}
+
+
+#soru_alani {
+ 
+  color: black;
+  padding: 0.5em;
+  height: 3rem;
+  
+}
+#soru_alani:hover{
+  color: coral;
+  background-color: rgba(5, 23, 40, 0.763);
+}
+
+.secimler {
+cursor: pointer;
+  padding: 0.3em;
+  color: black;
+}
+.secimler:hover{
+  color: coral;
+  background-color: rgba(5, 23, 40, 0.763);
+}
+
+.sonucEkrani{
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  color: white;
+}
+.wrapper{
+  display: none;
+}
+
+#sonuc2, #sonuc{
+  padding: 0.5em;
+  width: 60%;
+  color: rgb(52, 142, 29);
+  border: 1px solid rgb(48, 189, 19);
+  background-color: rgb(1, 1, 1);
+  font-weight: bolder;
+  display: none;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+ 
+}
+#sonuc{
+  color: rgb(4, 4, 4);
+  border: 1px solid rgb(151, 24, 4);
+  background-color: chartreuse;
+  cursor: pointer;
+}
+#sonuc:hover{
+ 
+  background-color: rgb(17, 167, 227);
+  transition: all 250ms;
+
+}
+
+@media (max-width: 992px) {	
+  .footer {
+    display: grid;
+   
+    gap: 1em;
+  }
+  .soru-container, .soru-paneli {
+    min-width: 15rem;
+    min-height: 17rem;
+  }
+  .secimler{
+    margin-top: 0.5em;
+  }
+
+}
